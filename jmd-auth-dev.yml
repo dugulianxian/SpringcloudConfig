@@ -46,9 +46,9 @@ logging:
     root: warn
 info:
   app:
-    name: "@project.name@"
-    description: "@project.description@"
+    name: auth
+    description: 认证服务
   build:
-    groupId: "@project.groupId@"
-    artifact: "@project.artifactId@"
-    version: "@project.version@"
+    groupId: spring.cloud.jmd
+    artifact: auth
+    version: 0.0.1-SNAPSHOT
