@@ -1,0 +1,43 @@
+spring:
+  messages:
+    basename: i18n/messages,org.springframework.security/messages
+  redis:
+    topic: __keyevent@0__:expired
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/jmd?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong&useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    connectionProperties: druid.stat.mergeSql:true;druid.stat.slowSqlMillis:5000
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+        javax:
+          persistence:
+            sharedCache:
+              mode: ENABLE_SELECTIVE
+    show-sql: false
+    open-in-view: true
