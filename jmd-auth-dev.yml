@@ -52,7 +52,3 @@ info:
     groupId: spring.cloud.jmd
     artifact: auth
     version: 0.0.1-SNAPSHOT
-security:
-  oauth2:
-    resource:
-      filter-order: 3
