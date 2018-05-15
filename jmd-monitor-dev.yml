@@ -5,19 +5,6 @@ security:
   user:
     name: jmd
     password: jmd123456
-  oauth2:
-    client:
-      clientId: webApp2
-      clientSecret: webApp2
-      accessTokenUri: http://192.168.21.24:9093/auth/oauth/token
-      userAuthorizationUri: http://192.168.21.24:9093/auth/oauth/authorize
-    resource:
-      id: jmd-monitor
-      user-info-uri: http://192.168.21.24:9093/auth/user
-      prefer-token-info: false
-      filter-order: 3
-    sso:
-      login-path: /auth/login
 management:
   security:
     enabled: true
