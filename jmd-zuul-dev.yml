@@ -28,6 +28,14 @@ hystrix:
             timeoutInMilliseconds: 600000
 ###超时配置###
 spring:
+  boot:
+    admin:
+      client:
+        metadata:
+          user.name: ${security.user.name}
+          user.password: ${security.user.password}
+        prefer-ip: true
+        management-base-url: ${management.context-path}
   redis:
     database: 0
     host: 127.0.0.1
