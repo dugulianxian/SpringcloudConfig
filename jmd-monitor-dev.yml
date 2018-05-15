@@ -9,11 +9,11 @@ security:
     client:
       clientId: webApp2
       clientSecret: webApp2
-      accessTokenUri: http://192.168.21.24:9095/auth/oauth/token
-      userAuthorizationUri: http://192.168.21.24:9095/auth/oauth/authorize
+      accessTokenUri: http://192.168.21.24:9093/auth/oauth/token
+      userAuthorizationUri: http://192.168.21.24:9093/auth/oauth/authorize
     resource:
       id: jmd-monitor
-      user-info-uri: http://192.168.21.24:9095/auth/user
+      user-info-uri: http://192.168.21.24:9093/auth/user
       prefer-token-info: false
       filter-order: 3
 management:
