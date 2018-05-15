@@ -54,3 +54,11 @@ spring:
       max-wait: -1
   session:
     store-type: none
+info:
+  app:
+    name: zuul
+    description: 网关服务
+  build:
+    groupId: spring.cloud.jmd
+    artifact: zuul
+    version: 0.0.1-SNAPSHOT
