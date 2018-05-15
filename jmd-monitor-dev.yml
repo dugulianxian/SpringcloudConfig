@@ -43,9 +43,9 @@ logging:
     root: warn
 info:
   app:
-    name: auth
-    description: 认证服务
+    name: monitor
+    description: 监控服务
   build:
     groupId: spring.cloud.jmd
-    artifact: auth
+    artifact: monitor
     version: 0.0.1-SNAPSHOT
