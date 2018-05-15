@@ -1,3 +1,14 @@
+security:
+  basic:
+    enabled: true
+    path: /mgmt
+  oauth2:
+    resource:
+      filter-order: 3
+management:
+  security:
+    enabled: true
+  context-path: /mgmt
 ####超时配置####
 ribbon:
   ReadTimeout: 10000
