@@ -6,9 +6,9 @@ zuul:
   routes:
     auth:
       path: /auth/**
-      strip-prefix: false
+      strip-prefix: true
       sensitiveHeaders:
-      serviceId: jmd-auth1
+      serviceId: jmd-auth
     app:
       path: /app/**
       strip-prefix: false
