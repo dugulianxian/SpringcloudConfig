@@ -1,3 +1,17 @@
+security:
+  basic:
+    enabled: true
+    path: /mgmt
+  oauth2:
+    token:
+      store:
+        type: jwt
+    resource:
+      filter-order: 3
+management:
+  security:
+    enabled: true
+  context-path: /mgmt
 spring:
   messages:
     basename: i18n/messages,org.springframework.security/messages

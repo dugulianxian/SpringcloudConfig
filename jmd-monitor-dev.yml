@@ -1,3 +1,22 @@
+security:
+  basic:
+    enabled: true
+    path: /mgmt
+  oauth2:
+    client:
+      clientId: webApp2
+      clientSecret: webApp2
+      accessTokenUri: http://192.168.21.24:8097/auth/oauth/token
+      userAuthorizationUri: http://192.168.21.24:8097/auth/oauth/authorize
+    resource:
+      id: jmd-monitor
+      user-info-uri: http://192.168.21.24:8097/auth/user
+      prefer-token-info: false
+      filter-order: 3
+management:
+  security:
+    enabled: true
+  context-path: /mgmt
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
