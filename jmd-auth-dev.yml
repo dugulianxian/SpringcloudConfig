@@ -6,9 +6,6 @@ security:
     name: jmd
     password: jmd123456
   oauth2:
-    token:
-      store:
-        type: jwt
     resource:
       filter-order: 3
 spring:
