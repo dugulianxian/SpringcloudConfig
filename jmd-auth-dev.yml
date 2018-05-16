@@ -1,7 +1,7 @@
 security:
   basic:
     enabled: true
-    path: /mgmt
+    path: ${management.context-path}
   user:
     name: jmd
     password: jmd123456
@@ -11,10 +11,6 @@ security:
         type: jwt
     resource:
       filter-order: 3
-management:
-  security:
-    enabled: true
-  context-path: /mgmt
 spring:
   boot:
     admin:
