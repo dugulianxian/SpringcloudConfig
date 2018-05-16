@@ -1,7 +1,7 @@
 security:
   basic:
     enabled: true
-    path: /mgmt
+    path: ${management.context-path}
   user:
     name: jmd
     password: jmd123456
@@ -16,10 +16,6 @@ security:
       user-info-uri: http://192.168.21.24:9093/auth/user
       prefer-token-info: false
       filter-order: 3
-management:
-  security:
-    enabled: true
-  context-path: /mgmt
 spring:
   boot:
     admin:
