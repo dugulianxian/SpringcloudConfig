@@ -30,8 +30,6 @@ spring:
         endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,turbine.stream
       turbine:
         location: ${spring.application.name}
-      username: ${security.user.name}
-      password: ${security.user.password}
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/jmd?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong&useSSL=false
