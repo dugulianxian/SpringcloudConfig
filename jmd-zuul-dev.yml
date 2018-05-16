@@ -2,6 +2,9 @@ security:
   basic:
     enabled: true
     path: /mgmt
+  user:
+    name: jmd
+    password: jmd123456
   oauth2:
     resource:
       filter-order: 3
