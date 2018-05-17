@@ -58,3 +58,7 @@ info:
     groupId: spring.cloud.jmd
     artifact: zuul
     version: 0.0.1-SNAPSHOT
+logging:
+  level:
+    root: info
+  path: log/${spring.application.name}
