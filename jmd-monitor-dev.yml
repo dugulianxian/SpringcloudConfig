@@ -69,9 +69,6 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull, oracle数据库必须配置
     jdbc-type-for-null: 'null'
-logging:
-  level:
-    root: warn
 info:
   app:
     name: monitor
