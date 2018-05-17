@@ -29,6 +29,7 @@ spring:
       routes:
         endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,turbine.stream
       turbine:
+        clusters: default
         location: ${spring.application.name}
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -82,8 +83,7 @@ logging:
     root: warn
   path: log/${spring.application.name}
 turbine:
-  instanceUrlSuffix:
-    JMD-AUTH: mgmt/hystrix.stream
+  instanceUrlSuffix: mgmt/hystrix.stream
   aggregator:
     clusterConfig: JMD-AUTH,JMD-CONFIG,JMD-ZUUL
   cluster-name-expression: metadata['cluster']
