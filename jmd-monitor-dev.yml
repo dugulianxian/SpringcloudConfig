@@ -83,8 +83,10 @@ logging:
     root: warn
   path: log/${spring.application.name}
 turbine:
-  instanceUrlSuffix: mgmt/hystrix.stream
+  instanceUrlSuffix:
+    auth: auth/mgmt/hystrix.stream
+    default:  /mgmt/hystrix.stream
   aggregator:
-    clusterConfig: JMD-AUTH,JMD-CONFIG,JMD-ZUUL
+    clusterConfig: auth,default
   cluster-name-expression: metadata['cluster']
   appConfig: JMD-AUTH,JMD-CONFIG,JMD-ZUUL
