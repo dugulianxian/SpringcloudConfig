@@ -85,7 +85,7 @@ logging:
 turbine:
   instanceUrlSuffix:
     auth: auth/mgmt/hystrix.stream
-    main:  /mgmt/hystrix.stream
+    main:  mgmt/hystrix.stream
   aggregator:
     clusterConfig: main,auth
   cluster-name-expression: metadata['cluster']
