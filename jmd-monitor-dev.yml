@@ -80,7 +80,7 @@ info:
     version: 0.0.1-SNAPSHOT
 logging:
   level:
-    root: warn
+    root: debug
   path: log/${spring.application.name}
 turbine:
   instanceUrlSuffix:
