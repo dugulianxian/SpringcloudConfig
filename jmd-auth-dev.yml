@@ -16,7 +16,6 @@ spring:
           user.name: ${security.user.name}
           user.password: ${security.user.password}
         prefer-ip: true
-        management-base-url: ${management.context-path}
   messages:
     basename: i18n/messages,org.springframework.security/messages
   redis:
