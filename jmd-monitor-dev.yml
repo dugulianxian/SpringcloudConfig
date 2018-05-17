@@ -89,4 +89,4 @@ turbine:
   aggregator:
     clusterConfig: main,auth
   cluster-name-expression: metadata['cluster']
-  appConfig: JMD-AUTH,JMD-CONFIG,JMD-ZUUL
+  appConfig: JMD-TEST-HI
