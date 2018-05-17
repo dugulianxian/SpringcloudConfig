@@ -67,9 +67,6 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull, oracle数据库必须配置
     jdbc-type-for-null: 'null'
-logging:
-  level:
-    root: warn
 info:
   app:
     name: auth
@@ -78,3 +75,7 @@ info:
     groupId: spring.cloud.jmd
     artifact: auth
     version: 0.0.1-SNAPSHOT
+logging:
+  level:
+    root: warn
+  path: log/${spring.application.name}

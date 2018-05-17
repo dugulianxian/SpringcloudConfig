@@ -80,3 +80,7 @@ info:
     groupId: spring.cloud.jmd
     artifact: monitor
     version: 0.0.1-SNAPSHOT
+logging:
+  level:
+    root: warn
+  path: log/${spring.application.name}
