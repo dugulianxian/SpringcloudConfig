@@ -31,7 +31,7 @@ spring:
       turbine:
         clusters: main,auth
         location: ${spring.application.name}
-      context-path: ${server.context-path}
+      context-path: /monitor
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/jmd?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong&useSSL=false
