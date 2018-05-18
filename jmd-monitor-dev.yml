@@ -16,6 +16,8 @@ security:
       user-info-uri: http://192.168.21.24:9093/auth/user
       prefer-token-info: false
       filter-order: 3
+    sso:
+      login-path: /auth/login
 spring:
   boot:
     admin:
