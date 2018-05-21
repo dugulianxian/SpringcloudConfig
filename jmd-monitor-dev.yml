@@ -19,6 +19,8 @@ security:
 spring:
   boot:
     admin:
+      username: ${security.user.name}
+      password: ${security.user.password}
       client:
         metadata:
           user.name: ${security.user.name}
