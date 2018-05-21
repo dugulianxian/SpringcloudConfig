@@ -33,6 +33,7 @@ spring:
       turbine:
         clusters: main,auth
         location: ${spring.application.name}
+      context-path: /monitor
 info:
   app:
     name: monitor
