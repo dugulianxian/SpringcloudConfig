@@ -31,6 +31,12 @@ hystrix:
             timeoutInMilliseconds: 600000
 ###超时配置###
 spring:
+  rabbitmq:
+    host: localhost
+    rabbitmq:
+      port: 15672
+      username: guest
+      password: guest
   boot:
     admin:
       client:
