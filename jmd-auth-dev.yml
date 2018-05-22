@@ -9,6 +9,12 @@ security:
     resource:
       filter-order: 3
 spring:
+  rabbitmq:
+    host: localhost
+    rabbitmq:
+      port: 15672
+      username: guest
+      password: guest
   boot:
     admin:
       client:

@@ -17,6 +17,12 @@ security:
       prefer-token-info: false
       filter-order: 3
 spring:
+  rabbitmq:
+    host: localhost
+    rabbitmq:
+      port: 15672
+      username: guest
+      password: guest
   boot:
     admin:
       username: ${security.user.name}
