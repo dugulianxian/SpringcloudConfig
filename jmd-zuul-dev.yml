@@ -62,3 +62,4 @@ logging:
   level:
     root: info
   path: log/${spring.application.name}
+foo: 123
